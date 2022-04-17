@@ -55,3 +55,14 @@ function executeWork(employee: Teacher | Director): void {
   if (employee instanceof Director) employee.workDirectorTasks();
   else if (employee instanceof Teacher) employee.workTeacherTasks();
 }
+
+type Subjects = 'Math' | 'History';
+
+function teachClass(teachClass: Subjects): string {
+  if (teachClass === 'Math') return 'Teaching Math';
+  return 'Teaching History';
+}
+
+//testing 
+
+//console.log(teachClass('Math'));
